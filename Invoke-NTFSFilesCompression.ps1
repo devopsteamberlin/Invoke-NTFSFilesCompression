@@ -1,5 +1,5 @@
 ﻿
-Function Start-NTFSFilesCompression {
+Function Invoke-NTFSFilesCompression {
 
   <#
   .SYNOPSIS
@@ -8,10 +8,10 @@ Function Start-NTFSFilesCompression {
    The function is intended for compressing (using the NTFS compression) all files with particular extensions older than given time unit
   .EXAMPLE
    Compress files with extension log in folder c:\test that are older than 20 minutes
-   Start-NTFSFilesCompression -Path C:\test -OlderThan 20
+   Invoke-NTFSFilesCompression -Path C:\test -OlderThan 20
   .EXAMPLE
    Compress files with extension txt in folder c:\test that are older than 1 hour
-   Start-NTFSFilesCompression -Path C:\test -OlderThan 1 -TimeUnit hours -Extension "txt"
+   Invoke-NTFSFilesCompression -Path C:\test -OlderThan 1 -TimeUnit hours -Extension "txt"
   .PARAMETER Path
   The folder path that contain files. Folder path can be pipelined.
   .PARAMETER $OlderThan
@@ -22,10 +22,11 @@ Function Start-NTFSFilesCompression {
    The extention of files that will be processed. The default file extenstion is "log".
   .NOTES
    AUTHOR: Wojciech Sciesinski, wojciech@sciesinski.net
-   LASTEDIT: 2013-10-04
+   LASTEDIT: 2013-10-08
    KEYWORDS: NTFS, compression
    VERSION HISTORY
-   1.0 Initial edition
+   1.0.0 - 2013-10-04 - Initial edition
+   1.0.1 - 2013-10-08 - Function renamed from Start-NTFSFilesCompression to Invoke-NTFSFilesCompression 
 
   #>
 
@@ -113,4 +114,4 @@ Function Start-NTFSFilesCompression {
     } #End PROCESS
 
 
-} #End Start-LogFilesCompression function
+} #End Invoke-LogFilesCompression function

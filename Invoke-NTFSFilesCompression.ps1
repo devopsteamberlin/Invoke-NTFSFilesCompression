@@ -22,12 +22,13 @@ Function Invoke-NTFSFilesCompression {
    The extention of files that will be processed. The default file extenstion is "log".
   .NOTES
    AUTHOR: Wojciech Sciesinski, wojciech@sciesinski.net
+   LICENSE: This code is licensed under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 http://www.gnu.org/licenses/gpl-3.0.txt
+   KEYWORDS: NTFS, compression, PowerShell
    LASTEDIT: 2013-10-08
-   KEYWORDS: NTFS, compression
    VERSION HISTORY
    1.0.0 - 2013-10-04 - Initial edition
-   1.0.1 - 2013-10-08 - Function renamed from Start-NTFSFilesCompression to Invoke-NTFSFilesCompression 
-
+   1.0.1 - 2013-10-08 - Function renamed from Start-NTFSFilesCompression to Invoke-NTFSFilesCompression
+   1.0.2 - 2013-10-08 - Information about licensing added, keywords extended 
   #>
 
   [CmdletBinding(
